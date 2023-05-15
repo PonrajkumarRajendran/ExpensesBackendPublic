@@ -14,7 +14,7 @@
 		
 		> npm install
 		
-		The above command might take some time, depending on your network connection.
+* The above command might take some time, depending on your network connection.
 		
 		* once the process finishes, open the code editor and replace the below given links.
 		replace this : "https://serene-lokum-53b06d.netlify.app/.netlify/functions"
