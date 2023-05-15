@@ -1,0 +1,13 @@
+[[redirects]]
+    from = "/*"
+    to = "https://serene-lokum-53b06d.netlify.app*"
+    status=200
+    force=true
+    headers = {X-From = "Netlify"}
+
+[[headers]]
+    for ="/*"
+    [header.values]
+        Access-Control-Allow-Origin = "*"
+[build]
+    functions = "functions"
