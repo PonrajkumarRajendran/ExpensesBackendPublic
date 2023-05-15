@@ -18,9 +18,9 @@
 		
 * once the process finishes, open the code editor and replace the below given links.
 	
-	replace this : "https://serene-lokum-53b06d.netlify.app/.netlify/functions"
+	replace this : `"https://serene-lokum-53b06d.netlify.app/.netlify/functions"`
 
-	with this: "http://localhost:5000/"
+	with this: `"http://localhost:5000/"`
 	
 	leave the remaining part of the link intact, without any other code changes.
 		
@@ -31,10 +31,10 @@
 
 * Download the zip file of this current Github repo.
 * Follow the same procedure as frontend to install NPM packages in the application. Unzip, then enter, `npm install`.
-* The code has been modified for localusage, so don't change any of the code other than the following.
+* The code has been modified for local usage, so don't change any of the code other than the following.
 
 # MongoDB Client URI: 
-* You can start your local MongoDB instance thourgh MongoDB Compass. Use the connection string from the local database instance in index.js file.
+* You can start your local MongoDB instance thourgh MongoDB Compass. Use the connection string from the local database instance in `index.js` file.
 
 # Facebook OAuth procedures: 
 * You need to create a Meta for developers account, and create a app.
@@ -42,9 +42,9 @@
 
 # JWT setup:
 * JWT secret key has to entered in the following locations.
-	auth.js
-	emailRoute.js
-	verifyToken.js
+	`auth.js`
+	`emailRoute.js`
+	`verifyToken.js`
 * You can choose your own key, replace the existing token_secret string. Make sure they all match. 
 * JWT is not setup with date constraints or anything, please let me know if you want to add further security in JWT.
 
