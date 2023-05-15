@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const User = require("../models/user");
-const token_secret = "YOU CAN USE ANY CODE YOU WANT";
+const token_secret = "TOKENSECRETOFYOURCHOICE";
 const jwt = require("jsonwebtoken");
 
 router.post("/signup", async (req, res) => {
@@ -31,7 +31,7 @@ router.post("/login", async (req, res) => {
   const password = req.body.password;
   const user = await User.findOne({ email: email });
   if (!user) return res.status(400).send("Email is wrong");
-  const passwordHash = await bcrypt.hash(password, user.passwordSalt);
+  const passwordHash = bcrypt.hash(password, user.passwordSalt);
   const validPass = passwordHash === user.passwordHash;
   if (!validPass) return res.status(400).send("password is wrong");
   const token = jwt.sign({ _id: user._id }, token_secret);

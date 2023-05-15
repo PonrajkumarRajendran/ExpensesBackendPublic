@@ -7,7 +7,10 @@ const passport = require("passport");
 const FacebookStrategy = require("passport-facebook").Strategy;
 const User = require("./models/user");
 
+//Please enter the connection URI from you local or cloud MongoDB instance.
+// Sample URI: mongodb+srv://{username}:{password}@tasks.qvhv6en.mongodb.net/{database name}?retryWrites=true&w=majority
 const uri = "ADD THE CONNECTION STRING FROM YOUR MONGODB INSTANCE";
+
 mongoose.set("strictQuery", true);
 mongoose.connect(uri, {
   useNewUrlParser: true,
@@ -35,6 +38,7 @@ passport.deserializeUser((obj, callBack) => {
 });
 passport.use(
   new FacebookStrategy(
+    //Please add client ID and Client secret from your facebook authentication app.
     {
       clientID: "CLIENT ID FROM YOUR FACEBOOK APP",
       clientSecret: "CLIENT SECRET FROM YOUR FACEBOOK APP",

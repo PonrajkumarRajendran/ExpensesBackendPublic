@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
-const token_secret = "YOU CAN USE ANY CODE YOU WANT";
+//JWT token secret
+const token_secret = "TOKENSECRETOFYOURCHOICE";
 module.exports = (req, res, next) => {
   const token = req.header("auth-token");
   if (!token) return res.status(400).send("Access Denied");

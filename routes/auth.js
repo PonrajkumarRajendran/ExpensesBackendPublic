@@ -1,5 +1,5 @@
 const passport = require("passport");
-const token_secret = "rajknsldgiuasdgasd";
+const token_secret = "TOKENSECRETOFYOURCHOICE";
 const jwt = require("jsonwebtoken");
 const router = require("express").Router();
 
@@ -29,9 +29,4 @@ router.get(
   })
 );
 
-router.post("/signup", (req, res) => {
-  const userName = req.body.userName;
-  const email = req.body.email;
-  const password = req.body.password;
-});
 module.exports = router;
