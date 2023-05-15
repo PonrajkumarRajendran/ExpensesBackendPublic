@@ -8,7 +8,7 @@ const FacebookStrategy = require("passport-facebook").Strategy;
 const User = require("./models/user");
 
 //Please enter the connection URI from you local or cloud MongoDB instance.
-// Sample URI: mongodb+srv://{username}:{password}@tasks.qvhv6en.mongodb.net/{database name}?retryWrites=true&w=majority
+// Sample URI: mongodb+srv://{username}:{password}@tasks.*******.mongodb.net/{database name}?retryWrites=true&w=majority
 const uri = "ADD THE CONNECTION STRING FROM YOUR MONGODB INSTANCE";
 
 mongoose.set("strictQuery", true);
