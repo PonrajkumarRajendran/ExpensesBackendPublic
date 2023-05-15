@@ -12,14 +12,16 @@
 
 * Open the unzipped source code in an IDE or use commandprompt to enter the below commands.
 		
-		> npm install
+	> npm install
 		
 * The above command might take some time, depending on your network connection.
 		
-		* once the process finishes, open the code editor and replace the below given links.
-		replace this : "https://serene-lokum-53b06d.netlify.app/.netlify/functions"
-		with this: "http://localhost:5000/"
-		leave the remaining part of the link intact, without any other code changes.
+* once the process finishes, open the code editor and replace the below given links.
+	replace this : "https://serene-lokum-53b06d.netlify.app/.netlify/functions"
+
+	with this: "http://localhost:5000/"
+	
+	leave the remaining part of the link intact, without any other code changes.
 		
 * After the above processes, you can start the Front-end app with the below command.
-		> npm start
+	> npm start
